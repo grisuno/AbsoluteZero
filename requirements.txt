@@ -1,1 +1,4 @@
-
+requests
+cmd2
+rich
+numpy
