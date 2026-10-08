@@ -1,0 +1,35 @@
+# API
+
+## app.py
+- `Task.success_rate` (method) `app.py:87` `def success_rate(self)`
+- `Task.to_dict` (method) `app.py:90` `def to_dict(self)`
+- `MemoryBank.__init__` (method) `app.py:96` `def __init__(self, persist_path)`
+- `MemoryBank.add_task` (method) `app.py:103` `def add_task(self, task)` -- Añade tarea si no es duplicada y cumple criterios de calidad.
+- `MemoryBank.get_reference_tasks` (method) `app.py:156` `def get_reference_tasks(self, task_type, n)` -- Obtiene tareas de referencia con muestreo inteligente.
+- `MemoryBank.save_to_disk` (method) `app.py:167` `def save_to_disk(self)` -- Guarda el banco de memoria en disco.
+- `MemoryBank.load_from_disk` (method) `app.py:175` `def load_from_disk(self)` -- Carga el banco de memoria desde disco.
+- `CurriculumLearning.__init__` (method) `app.py:188` `def __init__(self)`
+- `CurriculumLearning.update_performance` (method) `app.py:198` `def update_performance(self, reward)` -- Actualiza rendimiento y ajusta dificultad.
+- `AbsoluteZeroCmd.__init__` (method) `app.py:220` `def __init__(self)`
+- `AbsoluteZeroCmd.do_analyze` (method) `app.py:258` `def do_analyze(self, args)` -- Analiza código con opciones avanzadas.
+- `AbsoluteZeroCmd.do_stats` (method) `app.py:267` `def do_stats(self, arg)` -- Muestra estadísticas del sistema.
+- `AbsoluteZeroCmd.do_curriculum` (method) `app.py:282` `def do_curriculum(self, arg)` -- Muestra estado del curriculum learning.
+- `AbsoluteZeroCmd.do_save_memory` (method) `app.py:289` `def do_save_memory(self, arg)` -- Guarda manualmente el banco de memoria.
+- `SelfPlayTraining.__init__` (method) `app.py:747` `def __init__(self, memory_bank, cmd_instance)`
+- `SelfPlayTraining.run_tournament` (method) `app.py:753` `def run_tournament(self, rounds)` -- Ejecuta torneo entre diferentes versiones del modelo.
+- `MetaLearning.__init__` (method) `app.py:874` `def __init__(self)`
+- `MetaLearning.optimize_hyperparameters` (method) `app.py:887` `def optimize_hyperparameters(self, cmd_instance, iterations)` -- Optimiza hiperparámetros usando búsqueda aleatoria.
+- `AdvancedAnalytics.__init__` (method) `app.py:987` `def __init__(self)`
+- `AdvancedAnalytics.track_task_creation` (method) `app.py:996` `def track_task_creation(self, task)` -- Rastrea creación de tareas.
+- `AdvancedAnalytics.track_performance` (method) `app.py:1005` `def track_performance(self, reward, task_type)` -- Rastrea performance del sistema.
+- `AdvancedAnalytics.track_learning_velocity` (method) `app.py:1013` `def track_learning_velocity(self, success_rate)` -- Rastrea velocidad de aprendizaje.
+- `AdvancedAnalytics.track_error` (method) `app.py:1020` `def track_error(self, error_type, context)` -- Rastrea errores del sistema.
+- `AdvancedAnalytics.generate_report` (method) `app.py:1027` `def generate_report(self)` -- Genera reporte de analytics detallado.
+- `AdvancedAnalytics.save_analytics` (method) `app.py:1056` `def save_analytics(self, filepath)` -- Guarda reporte de analytics.
+- `AbsoluteZeroCmd.__init__` (method) `app.py:1067` `def __init__(self)`
+- `AbsoluteZeroCmd.do_tournament` (method) `app.py:1076` `def do_tournament(self, arg)` -- Ejecuta torneo de auto-juego.
+- `AbsoluteZeroCmd.do_optimize` (method) `app.py:1084` `def do_optimize(self, arg)` -- Optimiza hiperparámetros del sistema.
+- `AbsoluteZeroCmd.do_analytics` (method) `app.py:1092` `def do_analytics(self, arg)` -- Genera y muestra reporte de analytics.
+- `AbsoluteZeroCmd.do_export_tasks` (method) `app.py:1100` `def do_export_tasks(self, arg)` -- Exporta tareas a archivo JSON.
+- `AbsoluteZeroCmd.do_import_tasks` (method) `app.py:1111` `def do_import_tasks(self, arg)` -- Importa tareas desde archivo JSON.
+- `AbsoluteZeroCmd.do_benchmark` (method) `app.py:1132` `def do_benchmark(self, arg)` -- Ejecuta benchmark de performance del sistema.
