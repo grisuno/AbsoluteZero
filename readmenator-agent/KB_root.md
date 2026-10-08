@@ -1,0 +1,94 @@
+# Subsystem: root
+
+## app.py
+- Doc: Autor: Gris Iscomeback Correo electrónico: grisiscomeback[at]gmail[dot]com Fecha de creación...
+- Layer: utility
+- Language: py
+- Symbols:
+  - `Task` (class, line 62) `class Task`
+  - `MemoryBank` (class, line 93) `class MemoryBank`
+  - `CurriculumLearning` (class, line 185) `class CurriculumLearning`
+  - `AbsoluteZeroCmd` (class, line 217) `class AbsoluteZeroCmd(Cmd)`
+  - `SelfPlayTraining` (class, line 744) `class SelfPlayTraining`
+  - `MetaLearning` (class, line 871) `class MetaLearning`
+  - `AdvancedAnalytics` (class, line 984) `class AdvancedAnalytics`
+  - `AbsoluteZeroCmd` (class, line 1064) `class AbsoluteZeroCmd(AbsoluteZeroCmd)`
+  - `__post_init__` (method, line 75) `def __post_init__(self)`
+  - `_compute_hash` (method, line 81) `def _compute_hash(self)`
+  - `success_rate` (method, line 87) `def success_rate(self)`
+  - `to_dict` (method, line 90) `def to_dict(self)`
+  - `__init__` (method, line 96) `def __init__(self, persist_path)`
+  - `add_task` (method, line 103) `def add_task(self, task)`
+  - `_is_too_similar` (method, line 120) `def _is_too_similar(self, new_task)`
+  - `_simple_embedding` (method, line 137) `def _simple_embedding(self, program)`
+  - `_maintain_buffer_size` (method, line 149) `def _maintain_buffer_size(self, task_type)`
+  - `get_reference_tasks` (method, line 156) `def get_reference_tasks(self, task_type, n)`
+  - `save_to_disk` (method, line 167) `def save_to_disk(self)`
+  - `load_from_disk` (method, line 175) `def load_from_disk(self)`
+  - `__init__` (method, line 188) `def __init__(self)`
+  - `update_performance` (method, line 198) `def update_performance(self, reward)`
+  - `_adjust_difficulty` (method, line 205) `def _adjust_difficulty(self, avg_performance)`
+  - `__init__` (method, line 220) `def __init__(self)`
+  - `_initialize_with_seed` (method, line 237) `def _initialize_with_seed(self)`
+  - `do_analyze` (method, line 258) `def do_analyze(self, args)`
+  - `do_stats` (method, line 267) `def do_stats(self, arg)`
+  - `do_curriculum` (method, line 282) `def do_curriculum(self, arg)`
+  - `do_save_memory` (method, line 289) `def do_save_memory(self, arg)`
+  - `_analyze_sequential` (method, line 296) `def _analyze_sequential(self, directory, iterations)`
+  - `_analyze_parallel` (method, line 309) `def _analyze_parallel(self, directory, iterations)`
+  - `_get_code_files` (method, line 326) `def _get_code_files(self, directory)`
+  - `_analyze_code_file` (method, line 335) `def _analyze_code_file(self, file_path, iterations)`
+  - `_absolute_zero_loop` (method, line 346) `def _absolute_zero_loop(self, code_content, file_path, iterations)`
+  - `_propose_tasks_adaptive` (method, line 364) `def _propose_tasks_adaptive(self, code_content, file_path)`
+  - `_build_adaptive_propose_prompt` (method, line 393) `def _build_adaptive_propose_prompt(self, task_type, code_content, ref_tasks, difficulty)`
+  - `_query_deepseek_improved` (method, line 423) `def _query_deepseek_improved(self, prompt)`
+  - `_validate_task_improved` (method, line 457) `def _validate_task_improved(self, task)`
+  - `_is_executable` (method, line 482) `def _is_executable(self, program)`
+  - `_validate_deduction_task` (method, line 490) `def _validate_deduction_task(self, task)`
+  - `_validate_abduction_task` (method, line 504) `def _validate_abduction_task(self, task)`
+  - `_validate_induction_task` (method, line 516) `def _validate_induction_task(self, task)`
+  - `_extract_function_name` (method, line 533) `def _extract_function_name(self, program)`
+  - `_solve_tasks_improved` (method, line 538) `def _solve_tasks_improved(self, tasks, file_path)`
+  - `_build_solve_prompt_improved` (method, line 577) `def _build_solve_prompt_improved(self, task)`
+  - `_extract_solution_improved` (method, line 617) `def _extract_solution_improved(self, response, task_type)`
+  - `_calculate_reward_improved` (method, line 634) `def _calculate_reward_improved(self, task, solution)`
+  - `_verify_deduction_solution` (method, line 657) `def _verify_deduction_solution(self, task, solution)`
+  - `_verify_abduction_solution` (method, line 669) `def _verify_abduction_solution(self, task, solution)`
+  - `_verify_induction_solution` (method, line 681) `def _verify_induction_solution(self, task, solution)`
+  - `_calculate_average_reward` (method, line 704) `def _calculate_average_reward(self, solutions)`
+  - `_update_model_improved` (method, line 712) `def _update_model_improved(self, tasks, solutions)`
+  - `__init__` (method, line 747) `def __init__(self, memory_bank, cmd_instance)`
+  - `run_tournament` (method, line 753) `def run_tournament(self, rounds)`
+  - `_select_tournament_tasks` (method, line 778) `def _select_tournament_tasks(self, n_tasks)`
+  - `_evaluate_tournament_round` (method, line 797) `def _evaluate_tournament_round(self, tasks)`
+  - `_evaluate_single_task` (method, line 821) `def _evaluate_single_task(self, task)`
+  - `_evaluate_baseline_task` (method, line 831) `def _evaluate_baseline_task(self, task)`
+  - `_update_elo_ratings` (method, line 841) `def _update_elo_ratings(self, results)`
+  - `_display_tournament_summary` (method, line 857) `def _display_tournament_summary(self)`
+  - `__init__` (method, line 874) `def __init__(self)`
+  - `optimize_hyperparameters` (method, line 887) `def optimize_hyperparameters(self, cmd_instance, iterations)`
+  - `_generate_hyperparameters` (method, line 917) `def _generate_hyperparameters(self)`
+  - `_apply_hyperparameters` (method, line 927) `def _apply_hyperparameters(self, cmd_instance, hyperparams)`
+  - `_evaluate_performance` (method, line 936) `def _evaluate_performance(self, cmd_instance)`
+  - `_generate_test_tasks` (method, line 952) `def _generate_test_tasks(self)`
+  - `_display_optimization_summary` (method, line 976) `def _display_optimization_summary(self)`
+  - `__init__` (method, line 987) `def __init__(self)`
+  - `track_task_creation` (method, line 996) `def track_task_creation(self, task)`
+  - `track_performance` (method, line 1005) `def track_performance(self, reward, task_type)`
+  - `track_learning_velocity` (method, line 1013) `def track_learning_velocity(self, success_rate)`
+  - `track_error` (method, line 1020) `def track_error(self, error_type, context)`
+  - `generate_report` (method, line 1027) `def generate_report(self)`
+  - `save_analytics` (method, line 1056) `def save_analytics(self, filepath)`
+  - `__init__` (method, line 1067) `def __init__(self)`
+  - `do_tournament` (method, line 1076) `def do_tournament(self, arg)`
+  - `do_optimize` (method, line 1084) `def do_optimize(self, arg)`
+  - `do_analytics` (method, line 1092) `def do_analytics(self, arg)`
+  - `do_export_tasks` (method, line 1100) `def do_export_tasks(self, arg)`
+  - `do_import_tasks` (method, line 1111) `def do_import_tasks(self, arg)`
+  - `do_benchmark` (method, line 1132) `def do_benchmark(self, arg)`
+  - `_create_benchmark_tasks` (method, line 1171) `def _create_benchmark_tasks(self)`
+  - `_absolute_zero_loop` (method, line 1199) `def _absolute_zero_loop(self, code_content, file_path, iterations)`
+
+## install.sh
+- Layer: utility
+- Language: sh
